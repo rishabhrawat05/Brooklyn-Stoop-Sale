@@ -1,0 +1,716 @@
+
+@font-face {
+    font-family: news;
+    src: url(./fonts/LogamRegular-8Mv2J.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #F3EBDC;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: hsl(39, 49%, 91%);
+    padding: 1px;
+}
+#txt {
+    margin-top: 1%;
+    font-size: 10vw;
+    width: 60%;
+    line-height: 12vw;
+    font-family: news;
+    margin-left: 5%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 83%;
+    padding-left: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#txt h1{
+    margin-top: 1%;
+    font-size: 10vw;
+    width: 100%;
+    
+    line-height: 12vw;
+    font-family: news;
+    margin-left: 2%;
+    
+}
+
+#txt1 h1{
+    position: relative;
+    overflow: hidden;
+}
+#txt #txt3{
+    background-color: black;
+    color: #F3EBDC;
+    width: 45%;
+}
+#images{
+    height: 70%;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    background-color: #F3EBDC;
+}
+#images #img1{
+    height: 300px;
+    width: 300px;
+    rotate: -20deg;
+    animation: image 2s linear 2s;
+}
+#images #img2{
+    height: 300px;
+    width: 300px;
+    rotate: -10deg;
+    position: relative;
+    right: 20%;
+    z-index: 9;
+}
+#images #img3{
+    height: 250px;
+    width: 250px;
+    rotate: 20deg;
+    position: relative;
+    top: -70%;
+    right:-50%;
+}
+#images #img4{
+    height: 250px;
+    width: 250px;
+    rotate: -30deg;
+    position: relative;
+    top: -30%;
+    right:20%;
+    z-index: 10;
+}
+#page1 h3{
+    font-size: 2vw;
+    font-family: news;
+    margin-left: 6%;
+    margin-top: 2%;
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+#page1 span{
+    background-color: black;
+    color: #F3EBDC;
+    padding: 1px 10px;
+    letter-spacing: 1.5px;
+    
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F3EBDC;
+    
+}
+#page2 #text{
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 5vw;
+}
+@keyframes scr {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#page2 h1{
+    font-family: news;
+    padding-top: 5%;
+    font-size: 5vw;
+    text-align: center;
+    animation-name: scr;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#page2 #cards{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#card1::before{
+    content: "Clothes";
+    position: relative;
+    top: 0%;
+    left: 30%;
+    height: 100%;
+    width: 100%;
+    color:black;
+    font-size: 3vw;
+    font-family: news;
+    z-index: 4;
+    
+}
+#card1{
+    margin-top: -10%;
+    height: 10%;
+    width: 30%;
+    border:2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+#card1 img{
+    height: 300px;
+    width: 300px;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+#card2::before{
+    content: "Shoes";
+    position: relative;
+    top: 0%;
+    left: 30%;
+    height: 100%;
+    width: 100%;
+    color:black;
+    font-size: 3vw;
+    font-family: news;
+    z-index: 4;
+}
+#card2{
+    margin-top: -10%;
+    height: 10%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#card2 img{
+    height: 300px;
+    width: 300px;
+    margin-left: 8%;
+}
+#card3::before{
+    content: "Tchotchkes";
+    position: relative;
+    top: 0;
+    left: 20%;
+    height: fit-content;
+    width: fit-content;
+    color:black;
+   
+    font-size: 3vw;
+    font-family: news;
+    z-index: 4;
+    
+}
+#card3{
+    margin-top: -10%;
+    height: 10%;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#card3 img{
+    height: 300px;
+    width: 300px;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+#page3 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F3EBDC;  
+    
+}
+#horizontalcontainer{
+    height: 100%;
+    width: 100%;
+    
+}
+.item{
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+}
+#slides{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+}
+#item1{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#item1 h1{
+    font-family: news;
+    color: #F3EBDC;
+    font-size: 30vw;
+}
+#item2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#item2 h1{
+    font-family: news;
+    font-size: 15vw;
+    color: black;
+}
+#item2 span{
+    background-color: black;
+    color: #F3EBDC;
+    padding: 10px 10px;
+}
+#item3{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#item3 h1{
+    font-family: news;
+    color: #F3EBDC;
+    font-size: 30vw;
+}
+#item4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#item4 h1{
+    font-family: news;
+    font-size: 17vw;
+    color: black;
+}
+#item4 span{
+    background-color: black;
+    color: #F3EBDC;
+    padding: 10px 10px;
+}
+
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F3EBDC;
+    
+    
+}
+#map {
+  height: 80%;
+  width: 80%;
+}
+#venue{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 60%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#page4 h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    font-family:news;
+    font-size: 30vw;
+    width: fit-content;
+    color: white;
+    background-color: black;
+    mix-blend-mode: multiply;
+    opacity: 1;
+   
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F3EBDC;
+
+}
+#page5 #text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 5vw;
+    height: 10%;
+}
+#page5 h1{
+    font-family: news;
+    padding-top: 1%;
+    font-size: 5vw;
+    text-align: center;
+    animation-name: scr;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#card{
+    height: 90%;
+    width: 100%;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#card  .query{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: news;
+    font-size: 2vw;
+    padding-left: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.query .ans{
+    display: flex;
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    color: #F3EBDC;
+    padding: 5px 10px;
+    transition: all ease 0.5s;
+}
+.ans:hover{
+    background-color: #F3EBDC;
+    color: black;
+}
+#page6{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F3EBDC;
+}
+
+
+.contact{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+
+}
+
+.contact h2{
+    text-align: center;
+    font-size:3rem;
+    text-transform: capitalize;
+    font-family: news;
+}
+
+.maincomponent
+{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    font-family: news;
+    margin-top: 5%;
+    perspective: 800px;
+    
+}
+.maincomponent .card{
+    height: 100%;
+    width: 25%;
+    background-color: black;
+    border-radius: 10px;
+    
+    font-size: 30vw;
+    color: #F3EBDC;
+    position: relative;
+    transition: all ease 1s;
+    transform-style: preserve-3d;
+}
+.card:hover{
+    cursor:pointer;
+    transform: rotateY(180deg);
+}
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 10px;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+.back{
+    background-color: #F3EBDC;
+    transform: rotateY(180deg);
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.back h2{
+    font-size: 4vw;
+    color: black;
+    width: 80%;
+    text-align: center;
+}
+.back p{
+    font-size: 2vw;
+    margin-top: 5%;
+    color: black;
+    width: 80%;
+    text-align: center;
+}
+.back i{
+   margin-right: 20px;
+}
+.back span{
+    font-weight: 100;
+}
+@media screen and (max-width: 600px) {
+    #main{
+        overflow: hidden;
+        position: relative;
+    }
+    #txt {
+        margin-top: 30%;
+        font-size: 10vw;
+        width: 70%;
+        height:25%;
+    }
+    #images{
+        height: 50%;
+        width: 80%;
+        position: absolute;
+        left: 55%;
+        top: 60%;
+        transform: translate(-50%,-50%);  
+    }
+    #images #img1{
+        height: 200px;
+        width: 200px;
+        rotate: -20deg;
+        animation: image 2s linear 2s;
+    }
+    #images #img2{
+        height: 200px;
+        width: 200px;
+        rotate: -10deg;
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        z-index: 12;
+    }
+    #images #img3{
+        height: 200px;
+        width: 200px;
+        rotate: 20deg;
+        position: absolute;
+        top: 15%;
+        right:-10%;
+    }
+    #images #img4{
+        height: 200px;
+        width: 200px;
+        rotate: -30deg;
+        position: absolute;
+        top: 50%;
+        right:40%;
+        z-index: 10;
+    }
+    #page1 h3{
+        font-size: 6vw;
+        top: -34% ;
+        position: relative;
+        width: 69%;
+    }
+    #page2 h1{
+        font-family: news;
+        padding-top: 5%;
+        font-size: 10vw;
+        text-align: center;
+        
+    }
+    #page2 #cards{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #card1::before{
+        top: 0%;
+        left: 22%;
+        color:black;
+        font-size: 7vw;
+    }
+    #card1{
+       
+        height:5%;
+        width: 55%;
+        top:5%;
+        left: 3%;
+        position:absolute;
+        background-color: #F3EBDC;
+        
+    }
+    #card1 img{
+        height: 200px;
+        width: 200px;
+        margin-left: 4%;
+        margin-top: 2%;
+    }
+    #card2::before{
+        color:black;
+        font-size: 7vw;
+    }
+    #card2{
+        top: 35%;
+        height: 5%;
+        width: 55%;
+        right: 5%;
+        position:absolute;
+        background-color: #F3EBDC;
+    }
+    #card2 img{
+        height: 200px;
+        width: 200px;
+        margin-left: 8%;
+    }
+    #card3::before{
+        top: 0%;
+        left: 10%;
+        color:black;
+        font-size: 7vw; 
+    }
+    #card3{
+        height:5%;
+        width: 55%;
+        top:65dvh;
+        left: 3%;
+        position:absolute;
+        background-color: #F3EBDC;
+    }
+    #card3 img{
+        height: 200px;
+        width: 200px;
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+    #page4{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    #map{
+        width: 10%;
+        height: 10%;
+    }
+    #venue{
+          height: 70%;
+          width: 70%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 10px;
+          border: 2px solid black;
+      }
+      #page4 h1{
+          position: absolute;
+          left: 50%;
+          top: 8%;
+          transform: translate(-50%, -50%);
+          z-index: 9;
+          font-family:news;
+          font-size: 20vw;
+          width:fit-content;
+          color: white;
+          background-color: black;
+          mix-blend-mode: multiply;
+          opacity: 1;
+    }
+    #page5 h1{
+        font-size: 10vw;
+    }
+    #card  .query{
+        font-size: 4vw;
+    }
+    .maincomponent
+    {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+}
+    .maincomponent .card{
+        height: 100%;
+        width: 40%;
+    }
+    .back h2{
+        font-size: 5vw;
+        color: black;
+        width: 80%;
+        text-align: center;
+    }
+    .back p{
+        font-size: 3.5vw;
+        margin-top: 5%;
+        color: black;
+        width: 80%;
+        text-align: center;
+    }
+    .back i{
+       margin-right: 20px;
+    }
+    .back span{
+        font-weight: 100;
+    }
+}
